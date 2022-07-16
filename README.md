@@ -24,8 +24,9 @@ To deploy the required infra for kubernetes terraform IaC tool is used. The dire
 ├── variables.tf<br />
 ├── outputs.tf<br />
 ├── provider.tf <br />
-├── modules/....<br />
-
+├── modules/01rg....<br />
+<br /><br />
+I applied modular approach for the creation of resource group only but it can be applied to othe resource modules as well.<br />
 
 To login to Azure we will need a credential configured with Contributer Access and Owner permission to add in Access IAM<br />
 Created and assigned one spn to run the terraform plan<br /><br /><br /><br />
