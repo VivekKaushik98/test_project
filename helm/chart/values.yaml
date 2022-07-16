@@ -1,0 +1,7 @@
+containerName: testmediawiki
+appName: mediawiki
+servicePort: 80
+targetPort: 80
+
+image: test:1.1
+containerPort: 80

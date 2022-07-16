@@ -1,0 +1,10 @@
+docker build -t test:1.0 Dockefile .
+
+RUN dnf module reset php
+RUN dnf module enable php:7.4
+RUN dnf install httpd php php-mysqlnd php-gd php-xml mariadb-server mariadb php-mbstring php-json mod_ssl php-intl php-apcu
+EXPOSE 8080
+
+
+
+service apache2 startCMD ["service","apache2","start"]

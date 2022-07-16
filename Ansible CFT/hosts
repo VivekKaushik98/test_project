@@ -1,0 +1,5 @@
+[hostnamegp]
+172.17.0.3
+
+
+# To add hostname of server on which config are required via ansible

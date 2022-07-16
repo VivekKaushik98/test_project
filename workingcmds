@@ -1,0 +1,8 @@
+docker run --name test1 -d -p 81:80 test:1.1
+http://localhost:81/mediawiki/
+ln -s /var/lib/mediawiki /var/www/html/mediawiki
+
+docker cp C:\Users\Kaushik24\Downloads test1:/var/lib/mediawiki/
+kubectl cp LocalSettings.php "test-deployment-557b5d67b5-mgjr9:/var/lib/mediawiki/"
+kubectl port-forward test-deployment-557b5d67b5-mgjr9 80:80
+

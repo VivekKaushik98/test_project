@@ -1,0 +1,27 @@
+#Sample playbook to install pacakges and start services
+
+- hosts: all
+  tasks:
+  - name: Install Webserver pkgs
+    apt:
+      name:
+        - net-tools
+#        - apache2
+  - name: Install MariaDB
+    apt:
+      name:
+        - mariadb-server
+#        - php
+#        - php-mysql
+#        - libapache2-mod-php
+#        - php-xml
+#        - php-mbstring
+      state: latest
+  - name: Add Sudo
+    apt:
+      name:
+        - sudo
+  - name: Start Maria DB
+    shell: service mariadb start
+  - name: check status
+    shell: service mariadb status
