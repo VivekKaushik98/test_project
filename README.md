@@ -37,25 +37,25 @@ Created and assigned one spn to run the terraform plan<br /><br />
 To create Azure Kubernetes Cluster AKS I have run terraform plan with default config <br />
 The output for terraform plan is as below.<br />
 ![image](https://user-images.githubusercontent.com/30085103/179347729-502d8f9c-da55-4ca1-ac60-f01d63ec4283.png)
-
-terraform plan<br />
+<br /><br />
+terraform plan<br /><br />
 ![image](https://user-images.githubusercontent.com/30085103/179347786-6e795027-7458-49b7-be7d-a124e4782e1c.png)
 
 
 ### To avoid storing credential, spn, in text we can use data block to fetch it from the keyvaults directly.
 
 ## Configuration Management via Ansible: 
-To modify the configuration of the VM or container I have made some the changes by deploying the two docker containers on default network The requirements include openssh-server,client, python3 ansible and root login enabled
+To modify the configuration of the VM or container I have made some the changes by deploying the two docker containers on default network The requirements include openssh-server,client, python3 ansible and root login enabled<br />
 
 I created two pods
-one on which our application was running and other on which Ansible was installed and via ssh run one Ansible playbook to modify the existing application on the other pod.
+one on which our application was running and other on which Ansible was installed and via ssh run one Ansible playbook to modify the existing application on the other pod.<br />
 
-The output after applying config via ansible  :
+The output after applying config via ansible  :<br /><br />
 ![image](https://user-images.githubusercontent.com/30085103/179346980-93042a4f-0149-4074-bb02-589d31a7e29b.png)
 
-The application pod output 
-Before applying the playbook mariadb was not installed and once the playbook is completed it was up and running
-![image](https://user-images.githubusercontent.com/30085103/179347074-6ec33c32-2f66-4566-b071-a8ba736dedb1.png)
+The application pod output <br />
+Before applying the playbook mariadb was not installed and once the playbook is completed it was up and running<br /><br />
+![image](https://user-images.githubusercontent.com/30085103/179347074-6ec33c32-2f66-4566-b071-a8ba736dedb1.png)<br />
 
 
 #The Application Deployment consists of below parts:
