@@ -18,25 +18,27 @@ Or we can create a Azure Linux os VM and use Ansible as VM config tool to config
 
 To deploy the required infra for kubernetes terraform IaC tool is used. The directory structure is as follows
 
-.
-├── README.md
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── provider.tf 
-├── modules/....
-
-To login to Azure we will need a credential configured with Contributer Access and Owner permission to add in Access IAM
-Created and assigned one spn to run the terraform plan
-
-![image](https://user-images.githubusercontent.com/30085103/179346814-a4421c25-bca0-4be7-8ecc-48238c966964.png)
+.<br />
+├── README.md<br />
+├── main.tf<br />
+├── variables.tf<br />
+├── outputs.tf<br />
+├── provider.tf <br />
+├── modules/....<br />
 
 
-To create Azure Kubernetes Cluster AKS I have run terraform plan with default config 
-The output for terraform plan is as below.
+To login to Azure we will need a credential configured with Contributer Access and Owner permission to add in Access IAM<br />
+Created and assigned one spn to run the terraform plan<br /><br />
+
+
+![image](https://user-images.githubusercontent.com/30085103/179346814-a4421c25-bca0-4be7-8ecc-48238c966964.png)<br />
+
+
+To create Azure Kubernetes Cluster AKS I have run terraform plan with default config <br />
+The output for terraform plan is as below.<br />
 ![image](https://user-images.githubusercontent.com/30085103/179347729-502d8f9c-da55-4ca1-ac60-f01d63ec4283.png)
 
-terraform plan
+terraform plan<br />
 ![image](https://user-images.githubusercontent.com/30085103/179347786-6e795027-7458-49b7-be7d-a124e4782e1c.png)
 
 
