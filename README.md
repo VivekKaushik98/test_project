@@ -1,7 +1,7 @@
 # test_project
 
 
-## Problem Statement:
+## Output/Results
 To deploy Mediawiki website to Azure Kubernetes Cluster via various tools.
 
 To begin with I would like to update the approach which I have thought. I had to setup the local environment from scratch as I did not have any tools or Azure Account already.
