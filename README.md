@@ -51,14 +51,14 @@ I created two pods
 one on which our application was running and other on which Ansible was installed and via ssh run one Ansible playbook to modify the existing application on the other pod.<br />
 
 The output after applying config via ansible  :<br /><br />
-![image](https://user-images.githubusercontent.com/30085103/179346980-93042a4f-0149-4074-bb02-589d31a7e29b.png)
+![image](https://user-images.githubusercontent.com/30085103/179346980-93042a4f-0149-4074-bb02-589d31a7e29b.png)<br /><br />
 
 The application pod output <br />
 Before applying the playbook mariadb was not installed and once the playbook is completed it was up and running<br /><br />
-![image](https://user-images.githubusercontent.com/30085103/179347074-6ec33c32-2f66-4566-b071-a8ba736dedb1.png)<br />
+![image](https://user-images.githubusercontent.com/30085103/179347074-6ec33c32-2f66-4566-b071-a8ba736dedb1.png)<br /><br />
 
 
-#$ The Application Deployment consists of below parts:<br />
+## The Application Deployment consists of below parts:<br />
 Steps:<br />
 ### DockerImage:
 The idea here is to install or pull the required os and some pkgs at the build stage itself and exposing the ports.
@@ -68,14 +68,14 @@ The idea here is to install or pull the required os and some pkgs at the build s
 3.	configure properties
 4.	we can push image to ghcr or acr
 
-Adding multiple image layers helped incase error is there so isolating the error at that image layer.
+Adding multiple image layers helped incase error is there so isolating the error at that image layer.<br /><br />
 
-Image build:
-![image](https://user-images.githubusercontent.com/30085103/179347579-9c46b593-e203-4827-bff4-a4838b388f80.png)
+Image build:<br /><br />
+![image](https://user-images.githubusercontent.com/30085103/179347579-9c46b593-e203-4827-bff4-a4838b388f80.png)<br /><br /><br />
 
 
-Image after build:
-![image](https://user-images.githubusercontent.com/30085103/179347375-70f4c641-4f28-4f5e-b961-b41371f02891.png)
+Image after build:<br /><br />
+![image](https://user-images.githubusercontent.com/30085103/179347375-70f4c641-4f28-4f5e-b961-b41371f02891.png)<br /><br /><br />
 
 
 
@@ -88,11 +88,11 @@ To deploy the application to aks via Docker image I prepared the helm manifests 
 4.	build helm chart
 5.	deploy helm chart config to aks
 
-The helm chart output is as below.
-![image](https://user-images.githubusercontent.com/30085103/179347242-d7526f11-1757-453b-8679-2252e0e96544.png)
+The helm chart output is as below.<br /><br />
+![image](https://user-images.githubusercontent.com/30085103/179347242-d7526f11-1757-453b-8679-2252e0e96544.png)<br /><br /><br />
 
-The new k8s pod created via helm
-![image](https://user-images.githubusercontent.com/30085103/179347286-3936fb05-c2d4-48df-889a-c058a1e0b66e.png)
+The new k8s pod created via helm<br /><br /><br />
+![image](https://user-images.githubusercontent.com/30085103/179347286-3936fb05-c2d4-48df-889a-c058a1e0b66e.png)<br /><br /><br />
 
 
 
