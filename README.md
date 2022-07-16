@@ -63,7 +63,7 @@ Steps:<br />
 ### DockerImage:
 The idea here is to install or pull the required os and some pkgs at the build stage itself and exposing the ports.
 
-1.	pull centos image from dockerhub.
+1.	pull ubuntu image from dockerhub.
 2.	Add packages like apache, php, etc to the image
 3.	configure properties
 4.	we can push image to ghcr or acr
@@ -99,10 +99,20 @@ The new k8s pod created via helm<br /><br /><br />
 For CI/CD I have structured the github actions under directory .github/workflows/
 
 
-The final application is as below:
+## The final application is as below:<br />
 
 
 ## The final application is as below:
 ![image](https://user-images.githubusercontent.com/30085103/179346248-b774cec0-dbef-4818-99e0-13105890a0c0.png)
+<br /><br /><br /><br />
+
+
+
+![image](https://user-images.githubusercontent.com/30085103/179348251-41e83e2e-2b73-4c4f-a249-669c9bf750ab.png)
+
+<br /><br /><br /><br />
+LocalSettings.php<br /><br />
+![image](https://user-images.githubusercontent.com/30085103/179348310-921a4641-8b9c-4241-ac35-f4d2fa374939.png)
+
 
 
