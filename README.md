@@ -28,17 +28,17 @@ To deploy the required infra for kubernetes terraform IaC tool is used. The dire
 
 
 To login to Azure we will need a credential configured with Contributer Access and Owner permission to add in Access IAM<br />
-Created and assigned one spn to run the terraform plan<br /><br />
+Created and assigned one spn to run the terraform plan<br /><br /><br /><br />
 
 
-![image](https://user-images.githubusercontent.com/30085103/179346814-a4421c25-bca0-4be7-8ecc-48238c966964.png)<br />
+![image](https://user-images.githubusercontent.com/30085103/179346814-a4421c25-bca0-4be7-8ecc-48238c966964.png)<br /><br /><br />
 
 
 To create Azure Kubernetes Cluster AKS I have run terraform plan with default config <br />
-The output for terraform plan is as below.<br />
+The output for terraform plan is as below.<br /><br /><br />
 ![image](https://user-images.githubusercontent.com/30085103/179347729-502d8f9c-da55-4ca1-ac60-f01d63ec4283.png)
-<br /><br />
-terraform plan<br /><br />
+<br /><br /><br /><br /><br />
+terraform plan<br /><br /><br />
 ![image](https://user-images.githubusercontent.com/30085103/179347786-6e795027-7458-49b7-be7d-a124e4782e1c.png)
 
 
@@ -58,8 +58,8 @@ Before applying the playbook mariadb was not installed and once the playbook is 
 ![image](https://user-images.githubusercontent.com/30085103/179347074-6ec33c32-2f66-4566-b071-a8ba736dedb1.png)<br />
 
 
-#The Application Deployment consists of below parts:
-Steps:
+#$ The Application Deployment consists of below parts:<br />
+Steps:<br />
 ### DockerImage:
 The idea here is to install or pull the required os and some pkgs at the build stage itself and exposing the ports.
 
