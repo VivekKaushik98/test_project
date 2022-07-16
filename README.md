@@ -102,17 +102,20 @@ For CI/CD I have structured the github actions under directory .github/workflows
 ## The final application is as below:<br />
 
 
-## The final application is as below:
+
 ![image](https://user-images.githubusercontent.com/30085103/179346248-b774cec0-dbef-4818-99e0-13105890a0c0.png)
-<br /><br /><br /><br />
+<br /><br /><br />
 
-
-
+After completing GUI installation of mediawiki <br /><br />
 ![image](https://user-images.githubusercontent.com/30085103/179348251-41e83e2e-2b73-4c4f-a249-669c9bf750ab.png)
 
-<br /><br /><br /><br />
+<br /><br /><br />
 LocalSettings.php<br /><br />
 ![image](https://user-images.githubusercontent.com/30085103/179348310-921a4641-8b9c-4241-ac35-f4d2fa374939.png)
+<br /><br />
+The commads which were used were placed in workingcmds file.<br />
+
+## The Ubuntu environment was used
 
 
 
